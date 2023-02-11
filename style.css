@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+h1,h2,h3,p{
+  font-weight: 300;
+  color:grey;
+  filter: brightness(30%);
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add_emp{
+  padding: 5px ;
+  border-radius: 5px;
+}
+header strong{
+  font-size: 30px;
+}
+.container{
+  margin: 20px 10px;
+}
+section{
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns:30% 70%;
+  height: 590px;
+ 
+}
+.emp_list{
+  text-align: center;
+  border-right: 2px solid black;
+}
+.emp_list h2{
+
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+.emp_data{
+  
+  display: flex;
+  background: rgba(211, 211, 211, 0.5);
+  border-radius: 5px;
+  margin: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+.emp_data h3 {
+padding: 5px;
+}
+.btn_delete{
+  border:none;
+  margin-right: 20px;
+}
+.info_user{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.info_user img{
+  width:300px;
+  height: 300px;
+  border-radius: 50%;
+
+}
+.info h1{
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.info_user strong{
+  margin-top: 10px;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+
+/* form */
+
+form{
+  outline: none;
+  z-index: 10;
+  display: none;
+  position: absolute;
+  padding: 20px 40px;
+  border-radius: 10px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background: rgba(211, 211, 211, 0.5);
+
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+input{
+  padding: 2px 5px;
+  caret-color: red;
+  width:400px;
+  margin-bottom: 5px;
+}
+
+.show{
+  display: block;
+}
+.opacity{
+  opacity: .2;
+}
+
+
+@media only  screen and  (max-width:450px) {
+  section{
+  
+    grid-template-columns:35% 65%;
+   
+   
+  }
+  .info_user img{
+    width:200px;
+    height: 200px;
+   
+  
+  }
+  input{
+   
+    width:250px;
+  
+  }
+  
+}
